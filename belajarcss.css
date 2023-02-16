@@ -1,0 +1,42 @@
+h1 {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50pt;
+}
+a:hover {
+    visibility: hidden;
+}
+
+.wadah {
+    display: flex;
+}
+
+.wadah > div {
+    margin: 2px;    
+    background-color: blueviolet;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.container-flex > div {
+    flex-grow:1;
+    margin: 2px;
+    height: 10em;
+    width: 10em;
+    background-color: green;
+}
+
+.belajar-radius {
+    height: 10em;
+    width: 10em;
+    background-color: brown;
+    border-radius: 1em;
+    box-shadow: 0.5em 0.5em 1em 1em gray;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right, #ccc, blue);
+}

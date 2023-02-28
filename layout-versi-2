@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px 0px;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100%;
+            
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            background-color: cyan;
+        }
+        header {
+            flex: 1;
+            background-color: pink;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+        }
+        aside {
+            background-color: red;
+            padding: 20px;
+            width: 20%;
+            margin-right: 20px;
+        }
+        article {
+            background-color: blueviolet;
+            padding: 20px;
+            width: 80%;
+        }
+        main {
+            flex: 5;
+            display: flex;
+            background-color: yellow;
+            padding: 20px;
+            height: 80vh;
+            /* vh =  view port  */
+        }
+        section {
+            column-gap: 10px;
+            margin-left: 10px;
+            width: 100%;
+            display: flex;
+            background-color: yellowgreen;
+        }
+        
+        footer {
+            flex: 1;
+            background-color: greenyellow;
+            padding: 20px;
+            border-top: 1px solid #ccc;
+        }
+        ul {
+            
+            list-style: none;
+            display:flex;
+        }
+        li {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            Sidebar
+        </aside>
+        <section>
+                <article>
+                    Artikel 1
+                </article>
+                <article>
+                    Artikel 2
+                </article>
+                <article>
+                    Artikel 3
+                </article>
+        </section>
+    </main>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>

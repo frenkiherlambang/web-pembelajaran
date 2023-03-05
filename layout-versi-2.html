@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,65 +11,110 @@
             margin: 0px 0px;
             padding: 0;
             box-sizing: border-box;
-            height: 100%;
-            
+            /* height: 100%; */
+
         }
-        body{
+
+        body {
+            height: 100%;
             display: flex;
             flex-direction: column;
             background-color: cyan;
         }
+
         header {
+
+            /* background: linear-gradient(to top, #0662ed, #c3cfe2); */
             flex: 1;
-            background-color: pink;
+            /* background-color: violet; */
             padding: 20px;
             border-bottom: 1px solid #ccc;
             display: flex;
             justify-content: space-between;
         }
+
         aside {
             background-color: red;
             padding: 20px;
             width: 20%;
-            margin-right: 20px;
         }
+
         article {
             background-color: blueviolet;
             padding: 20px;
             width: 80%;
         }
+
         main {
             flex: 5;
             display: flex;
             background-color: yellow;
             padding: 20px;
             height: 80vh;
+            column-gap: 10px;
             /* vh =  view port  */
         }
+
         section {
             column-gap: 10px;
-            margin-left: 10px;
             width: 100%;
             display: flex;
             background-color: yellowgreen;
         }
-        
+
         footer {
             flex: 1;
             background-color: greenyellow;
             padding: 20px;
             border-top: 1px solid #ccc;
         }
+
         ul {
-            
+
             list-style: none;
-            display:flex;
+            display: flex;
         }
+
         li {
             margin-right: 20px;
         }
+
+        a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            margin: 4px;
+            background: linear-gradient(to top, #0662ed, #c3cfe2);
+        }
+
+        .sukai {
+            background-color: red;
+        }
+
+        /* @media untuk mendeteksi lebar layar */
+        @media screen and (max-width: 600px) {
+            main {
+                flex-direction: column;
+                row-gap: 10px;
+            }
+            aside {
+                width: 100%;
+            }
+            section {
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                row-gap: 10px;
+            }
+        }
+
+        
     </style>
 </head>
+
 <body>
     <header>
         <h1>Logo</h1>
@@ -85,19 +131,29 @@
             Sidebar
         </aside>
         <section>
-                <article>
-                    Artikel 1
-                </article>
-                <article>
-                    Artikel 2
-                </article>
-                <article>
-                    Artikel 3
-                </article>
+            <article>
+                <img height="300" src="https://picsum.photos/id/102/200/300" alt="">
+                <p>Artikel 1</p>
+                <a href="#" class="bacalanjut">Read More</a>
+                <a href="#" class="sukai">Like</a>
+            </article>
+            <article>
+                <img height="300" src="https://picsum.photos/id/101/200/300" alt="">
+                <p>Artikel 2</p>
+                <a href="#" class="bacalanjut">Read More</a>
+                <a href="#" class="sukai">Like</a>
+            </article>
+            <article>
+                <img height="300" src="https://picsum.photos/id/100/200/300" alt="">
+                <p>Artikel 3</p>
+                <a href="#" class="bacalanjut">Read More</a>
+                <a href="#" class="sukai">Like</a>
+            </article>
         </section>
     </main>
     <footer>
         Footer
     </footer>
 </body>
+
 </html>
